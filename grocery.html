@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GREOCERY SHOPPING APPLICATION</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7fb;
+            color: #222;
+        }
+
+        header {
+            background: linear-gradient(135deg, #182848, #4b6cb7);
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        header h1 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        nav {
+            background: #111827;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 25px;
+            display: block;
+        }
+
+        nav a:hover {
+            background: #4b6cb7;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: white;
+        }
+
+        .hero h2 {
+            color: #182848;
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            max-width: 750px;
+            margin: auto;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #182848;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .card h3 {
+            color: #4b6cb7;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            line-height: 1.6;
+        }
+
+        .faculty {
+            background: #eaf0ff;
+        }
+
+        .contact {
+            background: #182848;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .contact h2 {
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 28px;
+            }
+
+            .hero h2 {
+                font-size: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>GREOCERY SHOPPING APPLICATION</h1>
+        <p>Online Grocery Shopping Platform</p>
+        <p>Convenience and Quality Delivered</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#offer">Offer</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Home -->
+    <section class="hero" id="home">
+        <h2>Welcome to the GREOCERY SHOPPING APPLICATION</h2>
+        <p>
+            The GREOCERY SHOPPING APPLICATION is your one-stop solution for all your grocery needs.
+            Browse through a wide range of products, enjoy exclusive offers, and have your groceries delivered right
+        </p>
+    </section>
+
+    <!-- About -->
+    <section class="container" id="about">
+        <h2 class="section-title">About Us</h2>
+
+        <div class="card">
+            <p>
+                The GREOCERY SHOPPING APPLICATION is a modern online platform that provides convenient and reliable grocery shopping experiences. We aim to deliver fresh and quality products directly to our customers' doors.
+            </p>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section class="container" id="products">
+        <h2 class="section-title">Our Products</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Produce</h3>
+                <p>Fresh fruits and vegetables.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offer -->
+    <section class="container" id="offer">
+        <h2 class="section-title">Special Offers</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>buy one get one free</h3>
+                <p>Offer valid for a limited time.</p>
+            </div>
+
+            <div class="card">
+                <h3>bulk purchase discount</h3>
+                <p>Offer valid for a limited time.</p>
+            </div>
+
+            <div class="card">
+                <h3>discount on seasonal products</h3>
+                <p>Offer valid for a limited time.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>website    :www.groceryshop.com</p>
+        <p>Email      :website@groceryshop.com</p>
+        <p>Phone      :+91 12345 67890</p>
+        <p>address    :pollachi, Tamil Nadu, India</p>
+    </section>
+
+</body>
+</html>
